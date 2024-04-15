@@ -12,7 +12,7 @@ SUIT_Envelope_Tagged:
       suit-components:
       - - MEM
         - {{ app['dt'].label2node['cpu'].unit_addr }}
-        - {{ get_absolute_address(app['dt'].chosen_nodes['zephyr,code-partition']) }}
+        - {{ get_absolute_address(app['dt'].chosen_nodes['zephyr,code-partition']) + 0xce000 }}
         - {{ app['dt'].chosen_nodes['zephyr,code-partition'].regs[0].size }}
       - - CAND_IMG
         - 0
