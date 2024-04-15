@@ -157,6 +157,10 @@ config SUIT_ENVELOPE_SYSCTRL
         Create SUIT envelope for sysctrl in case it has been included in the build
     default y if INCLUDE_SYSCTRL
 
+config SUIT_ENVELOPE_TOP
+    bool "Create Nordic-TOP manifest"
+    default y
+
 config SUIT_ENVELOPE_SYSCTRL_TEMPLATE
   string "Location of template file for preparing sysctrl yaml envelope"
   help
